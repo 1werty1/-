@@ -1,0 +1,17 @@
+
+
+bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <URL репозитория>
+git push -u origin master
+git branch new_branch
+git checkout new_branch
+# Редактирование и сохранение кода
+git add .
+git commit -m "Added new feature"
+git push origin new_branch
+git checkout master
+git merge new_branch
+git push origin master
